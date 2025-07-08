@@ -4,26 +4,81 @@ body{
     background-color: #333132;
 }
 
+.loading{
+    position: fixed;
+    z-index: 100;
+    background-color: #333132;
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading.loaded {
+    animation: fadeout 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeout{
+    0%{opacity: 1;}
+    100%{opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loading-img{
+    position: relative;
+    
+}
+
+.loading-art{
+    position: absolute;
+}
+
+.loading-art img{
+    margin: auto;
+    display: block;
+    width: 30%;
+    animation: rotate 30s linear infinite;
+}
+
+.loading-art2 img{
+    margin: auto;
+    display: block;
+    width: 30%;
+    animation: rotate2 30s linear infinite;
+}
+
 .background{
     position: fixed;
     z-index: -10;
-    left: -10%;
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-img{
+    position: relative;
+}
+
+.back-art{
+    position: absolute;
 }
 
 .back-art,.back-art2{
-    position: absolute;
     color: #333132;
     opacity: 0.1;
 }
 
 .back-art img{
-    width: 125svw;
-    animation: rotate 40s linear infinite;
+    animation: rotate 80s linear infinite;
 }
 
 .back-art2 img{
-    width: 125svw;
-    animation: rotate2 40s linear infinite;
+    animation: rotate2 80s linear infinite;
 }
 
 @keyframes rotate{
@@ -40,7 +95,7 @@ header{
     width: 100svw;
     height: 100svh;
     position: fixed;
-    z-index: 100;
+    z-index: 50;
     display: flex;
     justify-content: space-between;
 }
@@ -51,7 +106,13 @@ header{
 
 .TOP{
     position: relative;
+    
 }
+
+.main-visual{
+    height: 100svh;
+}
+
 .main-visual img{
     height: 100svh;
 }
@@ -59,7 +120,6 @@ header{
 .title{
     display: flex;
     justify-content: center;
-    
 }
 
 .title img{
@@ -68,8 +128,129 @@ header{
     width: 75%;
 }
 
-.tab {
-    width:50%;
-    animation: cycle-bar 10s infinite ;
+.prV{
+    background-color: rgba(246,247,248,0.6);
 }
+
+
+.tab {
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #282928;
+    border-top:2px solid  #0067C0;
+    border-bottom: 2px solid #0067C0 ;
+}
+
+.tab ul {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes loop {
+    0% {
+    transform: translateX(100%);
+    }
+    to {
+    transform: translateX(-100%);
+    }
+}
+
+@keyframes loop2 {
+    0% {
+    transform: translateX(0);
+    }
+    to {
+    transform: translateX(-200%);
+    }
+}
+
+.tab ul:first-child {
+    animation: loop 100s -50s linear infinite;
+}
+
+.tab ul:last-child {
+    animation: loop2 100s linear infinite;
+}
+
+.tab ul{
+    display: flex;
+}
+
+.tab ul li{
+    list-style: none;
+}
+
+
+/*下タブ*/
+
+.tab2 {
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #282928;
+    border-top:2px solid  #0067C0;
+    border-bottom: 2px solid #0067C0 ;
+}
+
+.tab2 ul {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes loop-back {
+    0% {
+    transform: translateX(-100%);
+    }
+    to {
+    transform: translateX(100%);
+    }
+}
+
+@keyframes loop-back2 {
+    0% {
+    transform: translateX(-200%);
+    }
+    to {
+    transform: translateX(0);
+    }
+}
+
+.tab2 ul:first-child {
+    animation: loop-back 100s -50s linear infinite;
+}
+
+.tab2 ul:last-child {
+    animation: loop-back2 100s linear infinite;
+}
+
+.tab2 ul{
+    display: flex;
+}
+
+.tab2 ul li{
+    list-style: none;
+}
+/*以上*/
+
+.prV .Video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prV p{
+    text-align: center;
+    font-size: 125%;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝", "MS 明朝", serif;
+}
+
+.NEWS{
+    margin-top: 25%;
+}
+
 
