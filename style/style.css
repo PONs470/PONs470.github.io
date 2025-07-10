@@ -251,6 +251,15 @@ header{
 
 .NEWS{
     margin-top: 25%;
+    background-color: rgba(246,247,248,0.6);
+}
+
+.NEWS-list img{
+    width: 75svw;
+}
+
+.booth-information{
+    margin-top: 25%;
 }
 
 
