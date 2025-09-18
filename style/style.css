@@ -275,7 +275,7 @@ header{
 }
 
 .booth-information-title img{
-    width: 75%;
+    width: 100%;
 }
 
 .booth-information-title{
@@ -323,4 +323,13 @@ header{
 .event-title004{
     background-color: orange;
     border-radius: 10px;
+}
+
+
+@media (max-width:500px) {
+    .prV p{
+        text-align: center;
+        font-size: 75%;
+        font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝", "MS 明朝", serif;
+    }
 }
