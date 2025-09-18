@@ -118,21 +118,12 @@ header{
 
 .main-visual{
     height: 100svh;
-}
-
-.main-visual img{
-    height: 100svh;
-}
-
-.title{
     display: flex;
     justify-content: center;
 }
 
-.title img{
-    position: absolute;
-    top:40%;
-    width: 75%;
+.main-visual img{
+    height: 100svh;
 }
 
 .prV{
@@ -261,6 +252,10 @@ header{
     background-color: rgba(246,247,248,0.6);
 }
 
+.NEWS-title img{
+    width: 50%;
+}
+
 .NEWS-title{
     display: flex;
     justify-content: center;
@@ -279,8 +274,18 @@ header{
     opacity: 0.1;
 }
 
+.booth-information-title img{
+    width: 75%;
+}
+
+.booth-information-title{
+    display: flex;
+    justify-content: center;
+}
+
 .booth-information{
     margin-top: 25%;
+    background-color: rgba(246,247,248,0.6);
 }
 
 .time-table{
