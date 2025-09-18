@@ -117,13 +117,13 @@ header{
 }
 
 .main-visual{
-    height: 100svh;
+    width: 100svw;
     display: flex;
     justify-content: center;
 }
 
 .main-visual img{
-    height: 100svh;
+    width: 100svw;
 }
 
 .prV{
