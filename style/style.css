@@ -268,10 +268,17 @@ header{
 .list1,.list2{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
-.NEWS_link:hover{
-    opacity: 0.1;
+
+
+.NEWS-character{
+    position: absolute;
+    color: #282928;
+    top: 50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
 }
 
 .booth-information-title img{
@@ -287,6 +294,26 @@ header{
     margin-top: 25%;
     background-color: rgba(246,247,248,0.6);
 }
+
+.slide_img{
+    width: 100svw;
+}
+
+.splide__slide{
+    position: relative;
+}
+
+.fadein-slide h4{
+    text-align: center;
+}
+
+.fadein-slide{
+    position: absolute;
+    width: 100svw;
+    background-color: rgba(246,247,248,0.6);
+}
+
+
 
 .time-table{
     width: 75%;
